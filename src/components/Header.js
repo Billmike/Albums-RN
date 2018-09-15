@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 
-const styles = {
+const styles = StyleSheet.create({
   textStyle: {
     fontSize: 20
   },
@@ -17,7 +17,7 @@ const styles = {
     elevation: 2,
     position: 'relative'
   }
-}
+})
 
 const Header = ({ headerText }) => {
   const { textStyle, viewStyle } = styles;

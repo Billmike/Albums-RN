@@ -1,7 +1,7 @@
 import React from 'react';
-import { Text, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-const styles = {
+const styles = StyleSheet.create({
   buttonStyle: {
     flex: 1,
     alignSelf: 'stretch',
@@ -20,7 +20,7 @@ const styles = {
     paddingTop: 10,
     paddingBottom: 10
   }
-}
+})
 
 const Button = ({ onPress, children }) => {
   const { buttonStyle, textStyle } = styles;
